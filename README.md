@@ -1,4 +1,6 @@
-🫀 **Predicción de Ataques Cardíacos: Análisis y Modelado Predictivo**
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/99f0f110-cc85-4298-becf-2cb9c4854512" />
+
+🫀**Predicción de Ataques Cardíacos: Análisis y Modelado Predictivo**
 
 **Descripción del Proyecto:**
 Este proyecto se centra en la predicción de infartos utilizando un conjunto de datos con características clínicas y relacionadas con la salud. El flujo de trabajo incluye análisis exploratorio de datos (EDA), ingeniería de características, manejo de valores faltantes y atípicos, y la creación de múltiples modelos de aprendizaje automático para predecir la probabilidad de padecer una enfermedad cardíaca. El objetivo es proporcionar una herramienta de apoyo para la identificación temprana de pacientes con alto riesgo cardiovascular.
