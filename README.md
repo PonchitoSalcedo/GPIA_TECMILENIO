@@ -133,7 +133,7 @@ Por qué fue el mejor modelo: XGBoost combina boosting secuencial con regulariza
 
 <img width="847" height="306" alt="image" src="https://github.com/user-attachments/assets/982d0369-191b-4db5-aa24-e2869cfc6d40" />
 
-Interpretación rápida: El tipo de dolor de pecho es el predictor más relevante, seguido de los resultados de la prueba de talio y el número de vasos principales. Esto es clínicamente coherente: dolor asintomático junto con anomalías en talio y múltiples vasos afectados son señales críticas de alto riesgo cardiovascular. La depresión ST y la frecuencia cardíaca máxima también influyen significativamente.
+El tipo de dolor de pecho es el predictor más relevante, seguido de los resultados de la prueba de talio y el número de vasos principales. Esto es clínicamente coherente: dolor asintomático junto con anomalías en talio y múltiples vasos afectados son señales críticas de alto riesgo cardiovascular. La depresión ST y la frecuencia cardíaca máxima también influyen significativamente.
 
 
 **9. Conclusiones**
