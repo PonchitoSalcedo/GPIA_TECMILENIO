@@ -4,16 +4,27 @@ Este proyecto se centra en la predicción de infartos utilizando un conjunto de 
 
 
 📑 **Tabla de Contenidos**
+
 1.- Sobre el Proyecto
+
 2.- Conjunto de Datos
+
 3.- Análisis Exploratorio de Datos (EDA)
+
 4.- Visualizaciones
+
 5.- Preprocesamiento e Ingeniería de Características
+
 6.- Modelado de Aprendizaje Automático
+
 7.- Métricas y Evaluación de Modelos
+
 8.- Resultados y Comparativa
+
 9.- Conclusiones
+
 10.- Recomendaciones para Trabajos Futuros
+
 11.- Cómo Ejecutar el Proyecto
 
 **1. Sobre el Proyecto**
@@ -141,28 +152,36 @@ El tipo de dolor de pecho es el predictor más relevante, seguido de los resulta
 **Hallazgos principales:**
 
 1.- XGBoost es el modelo óptimo con un accuracy del 88.5% y F1-Score de 0.89, superando a los modelos baseline.
+
 2.- Las características más relevantes (cp, thall, caa) son clínicamente interpretables y validadas.
+
 3.- El dataset está balanceado (54% clase 1, 46% clase 0) sin necesidad de técnicas de balanceo adicionales.
+
 4.- La validación cruzada es consistente con el conjunto de prueba, lo que indica que no hay overfitting significativo.
 
 **Limitaciones del estudio:**
+  
   - Tamaño muestral reducido (303 pacientes), lo que limita la generalización de los resultados.
   - La variable fbs está muy desbalanceada (solo 15% con valores positivos).
   - No se ha realizado validación externa en una cohorte independiente.
 
 
 **10. Recomendaciones para Trabajos Futuros**
+
 **Mejoras en modelado:**
+  
   - Ajuste de hiperparámetros: Aplicar GridSearchCV o RandomizedSearchCV para optimizar los parámetros de XGBoost y Random Forest.
   - Modelos avanzados: Experimentar con LightGBM, CatBoost o redes neuronales (MLP) para mejorar el rendimiento.
   - Ensamblaje (Stacking): Combinar los tres modelos base con un meta-modelo (ej. Regresión Logística) para potencial mejora.
 
 **Mejoras en datos:**
+ 
   - Recolección de más datos: Incrementar el tamaño de la muestra para mejorar la generalización.
   - Balanceo de clases: Aplicar SMOTE o técnicas de sobremuestreo para clases minoritarias si es necesario.
   - Validación externa: Evaluar el modelo en un dataset diferente para confirmar robustez.
 
 **Interpretabilidad y despliegue:**
+  
   - SHAP values: Implementar SHAP para explicar predicciones individuales y mejorar la confianza clínica.
   - LIME: Generar explicaciones locales para cada predicción.
   - Dashboard interactivo: Desarrollar una aplicación con Streamlit o Gradio para demostración.
