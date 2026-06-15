@@ -32,7 +32,7 @@ Este proyecto se centra en la predicción de infartos utilizando un conjunto de 
   - 9.7 Limitaciones Metodológicas y Sesgos Identificados
   - 9.8 Contribuciones Originales y Valor Añadido del Proyecto
   - 9.9 Líneas de Investigación Futura
-  - 9.10 Conclusión Final y Declaración de Cierre
+  - 9.10 Conclusión Final
 
 **1. Sobre el Proyecto**
 Este proyecto fue desarrollado como parte de un análisis integral para la predicción de ataques cardíacos utilizando técnicas de machine learning. El flujo de trabajo incluye:
@@ -234,7 +234,7 @@ En el plano del despliegue, se recomienda el desarrollo de una aplicación web i
 
 Finalmente, se recomienda la realización de un estudio prospectivo de validación externa en colaboración con instituciones hospitalarias, donde el modelo se evalúe sobre datos no vistos recolectados en condiciones clínicas reales. Este estudio debería medir no solo las métricas tradicionales de rendimiento, sino también el impacto práctico del sistema en la toma de decisiones clínicas y, en última instancia, en los desenlaces de salud de los pacientes.
 
-**9.10 Conclusión Final y Declaración de Cierre**
+**9.10 Conclusión Final**
 
 En síntesis, este proyecto ha logrado construir un sistema predictivo para el riesgo de ataque cardíaco con un rendimiento sobresaliente (accuracy superior al 88%) utilizando exclusivamente técnicas de aprendizaje automático estándar pero aplicadas con rigor metodológico. XGBoost se consolida como el modelo óptimo, equilibrando precisión, sensibilidad y eficiencia computacional, y superando consistentemente a enfoques más simples como Regresión Logística y a alternativas basadas en bagging como Random Forest.
 
