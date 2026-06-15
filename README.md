@@ -6,15 +6,25 @@ Este proyecto se centra en la predicción de infartos utilizando un conjunto de 
 📑 **Tabla de Contenidos**
 
 1.- Sobre el Proyecto
+
 2.- Conjunto de Datos
+
 3.- Análisis Exploratorio de Datos (EDA)
+
 4.- Visualizaciones
+
 5.- Preprocesamiento e Ingeniería de Características
+
 6.- Modelado de Aprendizaje Automático
+
 7.- Métricas y Evaluación de Modelos
+
 8.- Resultados y Comparativa
+
 9.- Conclusiones
+
 10.- Recomendaciones para Trabajos Futuros
+
 11.- Cómo Ejecutar el Proyecto
 
 **1. Sobre el Proyecto**
