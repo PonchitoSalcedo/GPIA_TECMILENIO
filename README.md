@@ -26,33 +26,13 @@ Este proyecto fue desarrollado como parte de un análisis integral para la predi
 
 
 **2. Conjunto de Datos**
-| #  | 	**Variable**  |	**Descripción**                                   |	**Valores / Rango**                                                        |
-| 1	 |    age         | Edad del paciente	                                | 29 - 77 años                                                               |
-| 2	 |    sex         | Sexo del paciente	                                | 0: Femenino, 1: Masculino                                                  |
-| 3	 |    cp          | Tipo de dolor de pecho	                          | 1: Angina típica, 2: Angina atípica, 3: Dolor no anginoso, 4: Asintomático |
-| 4	 |  trestbps	    | Presión arterial en reposo (mm Hg)	              | 94 - 200 mm Hg                                                             |           
-| 5	 |    chol	      | Colesterol sérico en mg/dl	                      | 126 - 564 mg/dl                                                            |
-| 6	 |    fbs	        | Glucemia en ayunas > 120 mg/dl	                  | 0: Falso, 1: Verdadero                                                     |
-| 7	 |   restecg	    | Resultados electrocardiográficos en reposo	      | 0: Normal, 1: Anomalía ST-T, 2: Hipertrofia ventricular                    |
-| 8	 |   thalachh	    | Frecuencia cardíaca máxima alcanzada	            | 71 - 202 bpm                                                               |
-| 9	 |    exng	      | Angina inducida por el ejercicio	                | 0: No, 1: Sí                                                               |
-| 10 |	 oldpeak	    | Depresión del segmento ST inducida por ejercicio	| 0.0 - 6.2                                                                  |
-| 11 |	  slp	        | Pendiente del segmento ST de ejercicio máximo	    | 0: Ascendente, 1: Plana, 2: Descendente                                    |
-| 12 |	  caa	        | Número de vasos principales (0-4) coloreados	    | 0 - 4 vasos                                                                |
-| 13 |	 thall	      | Resultado de la prueba de esfuerzo con talio	    | 0: Normal, 1: Defecto fijo, 2: Reversible, 3: No descrito                  |
-| 14 |	 target	      | Variable objetivo	                                | 0: Menor probabilidad de infarto, 1: Mayor probabilidad                    |
+<img width="1072" height="515" alt="image" src="https://github.com/user-attachments/assets/6faa7451-efd4-4515-b190-e6b543d2f982" />
+<img width="1055" height="452" alt="image" src="https://github.com/user-attachments/assets/df792cf1-44d2-490c-b222-cc5b459ce671" />
 Nota: Los nombres y números de seguridad social de los pacientes fueron eliminados de la base de datos y reemplazados por valores ficticios.
 
 
 **3. Análisis Exploratorio de Datos (EDA)**
-| **Característica** |	**Media** |	 **Std**  |	**Min**   |	 **25%**  |	 **50%**  |	 **75%**  |	 **Max**  |
-| age	               |  54.37	    |  9.08     |  29.0     |	 47.5     |	 55.0     |	 61.0     |	 77.0     |
-| sex	               |   0.68	    |  0.47     |   0.0     |   0.0     |   1.0     |   1.0     |   1.0     |
-| cp	               |   0.97     |	 1.03     |	  0.0     |   0.0     |   1.0     |	  2.0     |	  3.0     |
-| trestbps	         | 131.62     |	17.54     |	 94.0     | 120.0     | 130.0     | 140.0     | 200.0     |
-| chol	             | 246.26     |	51.83     |	126.0     |	211.0     |	240.0     |	274.5     |	564.0     | 
-| thalachh	         | 149.65     |	22.91     |	 71.0     | 133.5     |	153.0     |	166.0     |	202.0     |
-| oldpeak	           |   1.04     |	 1.16     |	  0.0     |	  0.0     |	  0.8     |	  1.6     |	  6.2     |
+<img width="1112" height="406" alt="image" src="https://github.com/user-attachments/assets/24ae4f91-6795-40bf-8136-c0ae9ea99446" />
 
 **Hallazgos clave:**
 - Sin valores nulos: El dataset está completo (303 registros, 14 columnas).
@@ -94,12 +74,9 @@ A continuación se resumen los hallazgos visuales obtenidos en el cuaderno de Co
 **6. Modelado de Aprendizaje Automático**
 Modelos implementados:
 
-| **Modelo**          | **Tipo**            |	**Parámetros clave**                      |
-| Regresión Logística |	Lineal              |	max_iter=1000, class_weight='balanced'    |
-| Random Forest       |	Ensamble (Bagging)  |	n_estimators=100, class_weight='balanced' |
-| XGBoost             |	Ensamble (Boosting) |	n_estimators=100, eval_metric='logloss'   |
+<img width="815" height="202" alt="image" src="https://github.com/user-attachments/assets/35c256ec-0418-410c-8c96-494750f0a1e3" />
 
-Configuración de entrenamiento:
+**Configuración de entrenamiento:**
   - División de datos: 80% entrenamiento, 20% prueba (estratificada)
   - Validación cruzada: 5 folds estratificados
   - GPU: Habilitada (aceleración para XGBoost)
@@ -109,19 +86,14 @@ Configuración de entrenamiento:
 **7. Métricas y Evaluación de Modelos**
 **Resultados en conjunto de prueba (Test Set):**
 
+<img width="982" height="197" alt="image" src="https://github.com/user-attachments/assets/b56b0eb7-fab1-4c67-bb1a-8b826ebe4e29" />
 
-| **Modelo**          |	**Accuracy** | **Precision** | **Recall** |	**F1-Score** | **Latencia (ms/muestra)** |
-| Regresión Logística |	0.8525	     | 0.8571	       | 0.8571     |	0.8571       |	0.52                     |
-| Random Forest       |	0.8689	     | 0.8621	       | 0.8929     |	0.8772       |	1.87                     |
-| XGBoost             |	0.8852	     | 0.8929	       | 0.8929     |	0.8929       |	2.34                     |
 XGBoost es el más preciso y equilibrado con un F1-Score de 0.89. Regresión Logística es de 3 a 4 veces más rápida, ideal si se prioriza latencia sobre rendimiento.
 
 **Resultados de validación cruzada (5-Fold):**
 
-| **Modelo**          | **CV Accuracy** | **CV Precision** | **CV Recall** | **CV F1**  | 
-| Regresión Logística | 	0.8371        | 	0.8423         | 	0.8312       | 0.8365     | 
-| Random Forest       | 	0.8512        | 	0.8545         | 	0.8489       | 0.8512     | 
-| XGBoost             | 	0.8645        | 	0.8689         | 	0.8612       | 0.8645     | 
+<img width="772" height="195" alt="image" src="https://github.com/user-attachments/assets/01f51804-ed95-428b-8ab6-6369dab552a2" />
+
 Los resultados de validación cruzada son consistentes con los del conjunto de prueba (diferencia menor al 2%), confirmando robustez y ausencia de overfitting.
 
 **Matrices de confusión:**
@@ -152,22 +124,15 @@ Los resultados de validación cruzada son consistentes con los del conjunto de p
 **8. Resultados y Comparativa**
 **Mejor Modelo: XGBoost**
 
-| **Métrica**   |	**Valor**  |
-| Accuracy      |	88.52%     |
-| Precision     |	89.29%     |
-| Recall        |	89.29%     |
-| F1-Score      |	89.29%     |
+<img width="697" height="256" alt="image" src="https://github.com/user-attachments/assets/d8816dc6-7b87-4ca2-9341-734dab13db03" />
+
 Por qué fue el mejor modelo: XGBoost combina boosting secuencial con regularización L1/L2, lo que le permite modelar relaciones no lineales complejas y evitar overfitting. Su capacidad para manejar datos tabulares mixtos (numéricos más categóricos codificados) y su optimización en GPU lo hacen superior para este dominio médico, logrando el mejor balance entre precisión y sensibilidad clínica.
 
 
 **Importancia de características (Random Forest):**
 
-| **Característica**            | **Importancia** |
-| cp (tipo dolor pecho)	        |      0.142      |
-| thall (prueba talio)	        |      0.118      |
-| caa (vasos principales)	      |      0.109      |
-| oldpeak (depresión ST)	      |      0.098      |
-| thalachh (frecuencia máxima)	|      0.087      |
+<img width="847" height="306" alt="image" src="https://github.com/user-attachments/assets/982d0369-191b-4db5-aa24-e2869cfc6d40" />
+
 Interpretación rápida: El tipo de dolor de pecho es el predictor más relevante, seguido de los resultados de la prueba de talio y el número de vasos principales. Esto es clínicamente coherente: dolor asintomático junto con anomalías en talio y múltiples vasos afectados son señales críticas de alto riesgo cardiovascular. La depresión ST y la frecuencia cardíaca máxima también influyen significativamente.
 
 
