@@ -137,7 +137,9 @@ El tipo de dolor de pecho es el predictor más relevante, seguido de los resulta
 
 
 **9. Conclusiones**
-Hallazgos principales:
+
+**Hallazgos principales:**
+
 1.- XGBoost es el modelo óptimo con un accuracy del 88.5% y F1-Score de 0.89, superando a los modelos baseline.
 2.- Las características más relevantes (cp, thall, caa) son clínicamente interpretables y validadas.
 3.- El dataset está balanceado (54% clase 1, 46% clase 0) sin necesidad de técnicas de balanceo adicionales.
